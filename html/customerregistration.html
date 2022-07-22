@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>
+            customer registration
+        </title>
+        <h3>CUSTOMER REGISTRATION</h3>
+    </head>
+    <body align="center">
+        <form>
+            <fieldset>
+                Username:<input type="text" placeholder="name" pattern="[a-zA-Z]+" maxlength="15" autofocus/><br><br>
+                email:<input type="email" placeholder="mail" name=""/><br><br>
+                password:<input type="password" placeholder="password" pattern="^/\d\w\d\$" minlength="8" maxlength="12" required/><br><br>
+                gender:<br><br>
+                male:<input type="radio" value="male" /><br><br>
+                Female:<input type="radio" value="female"/><br><br>
+                others:<input type="radio" value="others"/><br><br>
+                age:<input type="number" min="12" max="60"/>
+                Address:<textarea rows="10" cols="10" maxlength="100"></textarea><br><br>
+                company website:<input type="url" name="url" id="url"
+                placeholder="https://example.com" pattern="https://.*" size="30" required/><br><br>
+                choose country:<input list="countries"/><br><br>
+                <datalist id="countries">
+                    <option value="India"></option>
+                    <option value="USA"></option>
+                    <option value="germany"></option>
+                    <option value="australia"></option>
+                </datalist>
+                date of journey:<input type="date" id="date"/><br><br>
+                <input type="button" value="submit"/><br><br>
+                <input type="reset" value="reset"/><br><br>
+
+
+
+                
+          
+            </fieldset>
+        </form>
+    </body>
+</html>
